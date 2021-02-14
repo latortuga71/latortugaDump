@@ -160,5 +160,8 @@ int main()
     if (!yes)
         return Error("failed to dump lsass");
     printf(":::: Successfully dumped lsass ::::");
+    //CloseHandle(hSnapshot);
+    //CloseHandle(hLsass);
+    //CloseHandle(hDmpFile);
     return 0;
 }
